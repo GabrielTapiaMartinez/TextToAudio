@@ -1,0 +1,25 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Kokoro Model Weights (automatically downloaded via run.sh)
+# Note: kokoro-v0_19.onnx is ~325MB which exceeds GitHub's 100MB file limit
+models/*.onnx
+models/*.bin
+
+# Local Audio & Temporary Caches
+.cache/
+:memory:.ses
+*.wav
+*.tmp*
+
+# macOS / OS Files
+.DS_Store
+Thumbs.db
